@@ -1,11 +1,14 @@
+
+.menu-admin > li{
+   font-size: 15pt;
+
+}
+
+
 .admin {
     height: 150px;
     margin-top: 60px;
     border: 15px solid #a8e958;
-
-
-
-
 
 }
 
