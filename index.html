@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap 101 Template</title>
     <!--   <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/estilos_base_pagina_admin.css" rel="stylesheet">
+    <link href="css/estilos_conteudoprincipal_admin.css" rel="stylesheet">
 
 
 </head>
 <body>
 
 <!-- Inicio Barra Lateral -->
-<div class="container-fluid ">
+<div class="container-fluid">
     <div class="row-fluid">
         <div class="cabecalho">
             <div class="col-md-8">
@@ -92,11 +94,84 @@
 
         </div>
     </div>
+    <div class="col-md-1"></div>
 
-    <div class="col-md-8">
+    <div class="col-md-7">
+
+        <div class="conteudo-principal">
+
+            <h2 class="titulo-principal"> Adicionar Questões</h2>
 
 
-        CONTEUDO PRINCIPAL
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="campo_prova" class="col-sm-2 control-label label-form"> Prova</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="campo_prova" name="prova">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="campo_enunciado" class="col-sm-2 control-label label-form">Enunciado</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" name="enunciado" id="campo_enunciado" rows="4"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label label-form">Imagens</label>
+                    <div class="col-sm-3">
+                        <input class="form-control " placeholder="Digite o link da imagem" name="enunciado_link1" id="campo_enunciado_link1">
+                    </div>
+                    <div class="col-sm-3">
+                        <input class="form-control" placeholder="Digite o link da imagem" name="enunciado_link2" id="campo_enunciado_link2">
+                    </div>
+                    <div class="col-sm-3">
+                        <input  class="form-control" placeholder="Digite o link da imagem" name="enunciado_link3" id="campo_enunciado_link3">
+                    </div>
+                </div>
+
+
+                <h3>Alternativas</h3>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label label-form">a)</label>
+                    <div class="col-sm-3">
+                        <input class="form-control " placeholder="Digite o link da imagem" id="campo_alternativa_a">
+                    </div>
+                    <div class="col-sm-5">
+                        <input  class="form-control" placeholder="Digite o link da imagem(se houver)" name="alternativa_a_link" id="campo_alternativa_a_link">
+                    </div>
+
+                </div>
+
+
+
+         <!--       <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                    </div>
+                </div> -->
+                </form>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
 
 </div>
