@@ -10,11 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/estilos_base_pagina_admin.css" rel="stylesheet">
     <link href="css/estilos_conteudoprincipal_admin.css" rel="stylesheet">
-
-
 </head>
 <body>
-
 <!-- Inicio Barra Lateral -->
 <div class="container-fluid">
     <div class="row-fluid">
@@ -22,39 +19,30 @@
             <div class="col-md-8">
                 <img src="https://disi.rnp.br/image/image_gallery?uuid=615617f5-8ee6-485b-bda5-76655a7bc27c&groupId=243350&t=1312830094474"
                      class="img-responsive logo">
-
             </div>
-            <div class="col-md-4"><img src="img/perfil.jpg" class="img-circle admin"><span class="texto-admin"> Valdir Jr
-
-
-
-            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
-                <span class="caret"></span></button>
-    <ul class="dropdown-menu  dropdown-menu-right menu-admin" role="menu" aria-labelledby="menu1">
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Inicio</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar Perfil</a></li>
-     <li role="presentation" class="divider"></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sair</a></li>
-    </ul>
-
-
-            </span>
+            <div class="col-md-4">
+                <img src="img/perfil.jpg" class="img-circle admin">
+                        <span class="texto-admin">
+                            Valdir Jr
+                            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu  dropdown-menu-right menu-admin" role="menu" aria-labelledby="menu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Inicio </a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar Perfil </a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sair </a></li>
+                            </ul>
+                        </span>
             </div>
-
-
         </div>
     </div>
-
-
 </div>
-
 <div class="row-fluid">
     <div class="col-md-2">
         <div class="nav nav-pills nav-stacked barra-lateral">
             <li class="termo-cabeca"> Questões</li>
-            </a>
-            <ul class="nav nav-pills nav-stacked termos-barra">
 
+            <ul class="nav nav-pills nav-stacked termos-barra">
                 <a href="#">
                     <li> Adicionar Questões</li>
                 </a>
@@ -66,9 +54,8 @@
                 </a>
             </ul>
             <li class="termo-cabeca">Assuntos</li>
-            </a>
-            <ul class="nav nav-pills nav-stacked termos-barra">
 
+            <ul class="nav nav-pills nav-stacked termos-barra">
                 <a href="#">
                     <li> Adicionar Assuntos</li>
                 </a>
@@ -80,9 +67,8 @@
                 </a>
             </ul>
             <li class="termo-cabeca">Administrador</li>
-            </a>
-            <ul class="nav nav-pills nav-stacked termos-barra">
 
+            <ul class="nav nav-pills nav-stacked termos-barra">
                 <a href="#">
                     <li> Ver Perfil</li>
                 </a>
@@ -90,62 +76,109 @@
                     <li> Mudar Senha</li>
                 </a>
             </ul>
-
-
         </div>
     </div>
     <div class="col-md-1"></div>
-
     <div class="col-md-7">
-
         <div class="conteudo-principal">
-
             <h2 class="titulo-principal"> Adicionar Questões</h2>
-
-
-            <form class="form-horizontal">
+            <form action="http://localhost/tutoria/inicio/processar" method="post" class="form-horizontal" accept-charset="utf-8">
                 <div class="form-group">
                     <label for="campo_prova" class="col-sm-2 control-label label-form"> Prova</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="campo_prova" name="prova">
                     </div>
                 </div>
+
+                <div class="form-group">
+                    <label for="campo_assunto" class="col-sm-2 control-label label-form"> Assunto</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="campo_assunto" name="assunto">
+                    </div>
+                </div>
+
                 <div class="form-group">
                     <label for="campo_enunciado" class="col-sm-2 control-label label-form">Enunciado</label>
                     <div class="col-sm-10">
                         <textarea class="form-control" name="enunciado" id="campo_enunciado" rows="4"></textarea>
                     </div>
                 </div>
-
                 <div class="form-group">
-                    <label  class="col-sm-2 control-label label-form">Imagens</label>
+                    <label class="col-sm-2 control-label label-form">Imagens</label>
                     <div class="col-sm-3">
-                        <input class="form-control " placeholder="Digite o link da imagem" name="enunciado_link1" id="campo_enunciado_link1">
+                        <input class="form-control " placeholder="Digite o link da imagem" name="enunciado_link1"
+                               id="campo_enunciado_link1">
                     </div>
                     <div class="col-sm-3">
-                        <input class="form-control" placeholder="Digite o link da imagem" name="enunciado_link2" id="campo_enunciado_link2">
+                        <input class="form-control" placeholder="Digite o link da imagem" name="enunciado_link2"
+                               id="campo_enunciado_link2">
                     </div>
                     <div class="col-sm-3">
-                        <input  class="form-control" placeholder="Digite o link da imagem" name="enunciado_link3" id="campo_enunciado_link3">
+                        <input class="form-control" placeholder="Digite o link da imagem" name="enunciado_link3"
+                               id="campo_enunciado_link3">
                     </div>
                 </div>
-
-
                 <h3>Alternativas</h3>
                 <div class="form-group">
-                    <label  class="col-sm-2 control-label label-form">a)</label>
+                    <label class="col-sm-2 control-label label-form">a)</label>
                     <div class="col-sm-3">
-                        <input class="form-control " placeholder="Digite o link da imagem" id="campo_alternativa_a">
+                        <input class="form-control "name="a" placeholder="Digite o link da imagem" id="campo_alternativa_a">
                     </div>
                     <div class="col-sm-5">
-                        <input  class="form-control" placeholder="Digite o link da imagem(se houver)" name="alternativa_a_link" id="campo_alternativa_a_link">
+                        <input class="form-control" placeholder="Digite o link da imagem(se houver)"
+                               name="alternativa_a_link" id="campo_alternativa_a_link">
                     </div>
-
                 </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label label-form">b)</label>
+                    <div class="col-sm-3">
+                        <input class="form-control " name="b" placeholder="Digite o link da imagem" id="campo_alternativa_b">
+                    </div>
+                    <div class="col-sm-5">
+                        <input class="form-control" placeholder="Digite o link da imagem(se houver)"
+                               name="alternativa_b_link" id="campo_alternativa_b_link">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label label-form">c)</label>
+                    <div class="col-sm-3">
+                        <input class="form-control "name="c" placeholder="Digite o link da imagem" id="campo_alternativa_c">
+                    </div>
+                    <div class="col-sm-5">
+                        <input class="form-control" placeholder="Digite o link da imagem(se houver)"
+                               name="alternativa_c_link" id="campo_alternativa_c_link">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label label-form">d)</label>
+                    <div class="col-sm-3">
+                        <input class="form-control " name="d" placeholder="Digite o link da imagem" id="campo_alternativa_d">
+                    </div>
+                    <div class="col-sm-5">
+                        <input class="form-control" placeholder="Digite o link da imagem(se houver)"
+                               name="alternativa_d_link" id="campo_alternativa_d_link">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label label-form">e)</label>
+                    <div class="col-sm-3">
+                        <input class="form-control " name="e" placeholder="Digite o link da imagem" id="campo_alternativa_e">
+                    </div>
+                    <div class="col-sm-5">
+                        <input class="form-control" placeholder="Digite o link da imagem(se houver)"
+                               name="alternativa_e_link" id="campo_alternativa_e_link">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-5 col-sm-2 col-sm-offset-5">
+
+                        <button type="submit" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-floppy-open"></span>Salvar </button>
 
 
 
-         <!--       <div class="form-group">
+                    </div>
+                </div>
+                <!--       <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <div class="checkbox">
                             <label>
@@ -153,35 +186,14 @@
                             </label>
                         </div>
                     </div>
-                </div> -->
-                </form>
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
+                    </div> -->
+            </form>
+        </div>
     </div>
-
 </div>
-</div>
-
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-
 </body>
 </html>
